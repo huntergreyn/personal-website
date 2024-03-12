@@ -13,6 +13,11 @@ a {
 }
 
   /* Header */
+
+/* #header {
+   position: fixed;
+} */
+
 #header img {
     margin-top: 10px;
     padding-right: 20px;
@@ -46,7 +51,66 @@ a {
 #header nav>ul>li>a:hover {
     color: rgb(136, 106, 255);
 }
+#header nav > ul > li {
+    position: relative;
+    margin-left: 10px;
 
+    > a {
+      padding: 10px;
+    }
+    > a:hover {
+      color: #8490ff;
+    }
+    > a:visited {
+      color: #8490ff;
+    }
+  }
+#header nav > ul > li:hover > ul {
+    display: flex;
+  }
+
+  /* Menu Level 2 */
+#header nav > ul > li > ul {
+    background-color: rgb(243, 255, 233);
+
+    position: absolute;
+    right: 0;
+    top: 148%;
+
+    width: max-content;
+
+    display: none;
+    flex-direction: column;
+    padding: 5px;
+
+    > li > a {
+      padding: 10px 90px 10px 10px;
+    }
+  }
+
+
+ /* Menu Level 2 */
+#header nav > ul > li > ul {
+    background-color: rgb(255, 255, 255);
+
+    position: absolute;
+    right: 0;
+    top: 148%;
+
+    width: max-content;
+
+    display: none;
+    flex-direction: column;
+    padding: 5px;
+
+    > li > a {
+      padding: 10px 90px 10px 10px;
+    }
+  }
+  
+#header nav > ul > li:hover > ul {
+    display: flex;
+}
 
   /* main  */
 #main-area{
